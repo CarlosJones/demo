@@ -12,9 +12,9 @@ import java.util.HashMap;
 public class FaceDetectService {
     private static final Logger logger = LoggerFactory.getLogger(FaceDetectService.class);
     //设置APPID/AK/SK
-    public static final String APP_ID = "21272723";
-    public static final String API_KEY = "gef3tl8twy3RlD5osyEyRteh";
-    public static final String SECRET_KEY = "ObnbpRTQyfPF0H2zprubumzSKyNYMAGe";
+    public static final String APP_ID = "xxxxxxx";
+    public static final String API_KEY = "xxxxxxx";
+    public static final String SECRET_KEY = "xxxxxxx";
 
     public String  getPop(String images,String idCardNumber,String name){
         // 初始化一个AipFace
