@@ -16,7 +16,7 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:51501,suspend=y,server=n -XX:TieredStopAtLevel=1 -Xverify:none -Dspring.profiles.active=dev -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dfile.encoding=UTF-8 com.example.demo.DemoApplication
+Command Line: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:51501,suspend=y,server=n -XX:TieredStopAtLevel=1 -Xverify:none -Dspring.profiles.active=dev -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dfile.encoding=UTF-8 DemoApplication
 
 Host: Intel(R) Core(TM) i5-6300HQ CPU @ 2.30GHz, 4 cores, 8G, CentOS Linux release 8.2.2004 (Core) 
 Time: Wed Jul 15 09:54:33 2020 CST elapsed time: 379 seconds (0d 0h 6m 19s)
@@ -226,7 +226,7 @@ Event: 347.690 Thread 0x00007fb96814a000 4870       1       org.apache.tomcat.ut
 Event: 347.690 Thread 0x00007fb96814a000 nmethod 4870 0x00007fb95158c090 code [0x00007fb95158c220, 0x00007fb95158c2f0]
 Event: 362.909 Thread 0x00007fb96814a000 4871       1       java.nio.channels.spi.AbstractSelectionKey::isValid (13 bytes)
 Event: 362.909 Thread 0x00007fb96814a000 nmethod 4871 0x00007fb95158c390 code [0x00007fb95158c520, 0x00007fb95158c610]
-Event: 365.003 Thread 0x00007fb96814a000 4872       1       com.example.demo.lib.NetSDKLib$NET_TIME_EX::<init> (12 bytes)
+Event: 365.003 Thread 0x00007fb96814a000 4872       1       NetSDKLib$NET_TIME_EX::<init> (12 bytes)
 Event: 365.003 Thread 0x00007fb96814a000 nmethod 4872 0x00007fb95158c690 code [0x00007fb95158c820, 0x00007fb95158ca40]
 Event: 365.169 Thread 0x00007fb96814a000 4874       1       sun.nio.cs.ThreadLocalCoders$2::hasName (43 bytes)
 Event: 365.170 Thread 0x00007fb96814a000 nmethod 4874 0x00007fb95158cb10 code [0x00007fb95158cce0, 0x00007fb95158d070]
@@ -953,7 +953,7 @@ ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsysca
 
 VM Arguments:
 jvm_args: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:51501,suspend=y,server=n -XX:TieredStopAtLevel=1 -Xverify:none -Dspring.profiles.active=dev -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dfile.encoding=UTF-8 
-java_command: com.example.demo.DemoApplication
+java_command: DemoApplication
 java_class_path (initial): /home/df/IdeaProjects/demo/target/classes:/home/df/IdeaProjects/demo/libs/jna.jar:/home/df/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.jar:/home/df/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.jar:/home/df/.m2/repository/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar:/home/df/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar:/home/df/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.jar:/home/df/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/df/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/df/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar:/home/df/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/home/df/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/home/df/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/df/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar:/home/df/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.jar:/home/df/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.0/jackson-datatype-jdk8-2.11.0.jar:/home/df/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.0/jackson-datatype-jsr310-2.11.0.jar:/home/df/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.0/jackson-module-parameter-names-2.11.0.jar:/home/df/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.jar:/home/df/.m2/repository/o
 Launcher Type: SUN_STANDARD
 
