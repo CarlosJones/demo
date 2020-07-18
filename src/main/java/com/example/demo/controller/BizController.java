@@ -95,7 +95,7 @@ public class BizController {
                         }else{
                             Thread.sleep(100);
                             long cTime = System.currentTimeMillis();
-                            if( cTime-sTime > 15000 ){  //15s
+                            if( cTime-sTime > 15000 ){  //35s
                                 deviceStateInfo.setFaceDetect(0);
                                 deviceStateInfo.setFaceBase64Data(null);
                                 System.out.println("======stopRealLoadPic======1");
